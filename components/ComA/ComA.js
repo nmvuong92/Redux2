@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import {Text,View} from 'react-native';
+import {Text,View,StyleSheet} from 'react-native';
 import {connect} from 'react-redux';
 
-import ComB from './ComB';
+import ComB from './../ComB/ComB';
+import styles from './styles';
 class ComA extends Component {
    
     render() {
         return (
-            <View style={{alignContent:"center",alignItems:"center",marginTop:100}}>
+            <View style={styles.container}>
                 <Text>{this.props.myValue}</Text>
                 <ComB/>
             </View>    

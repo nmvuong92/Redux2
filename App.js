@@ -11,9 +11,10 @@ import {
   Text,
   View
 } from 'react-native';
-import ComA from './components/ComA';
+import ComA from './components/ComA/ComA';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import FlexDemo from './components/FlexDemo/index';
 const defaultState={value:0};
 const reducer = (state=defaultState,action)=>{
     if(action.type=="UP")
@@ -35,11 +36,14 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    return (
+     /*return (
       <Provider store={store}>
        <ComA/>
-      </Provider>
-    );
+      </Provider>*/
+      return (
+        <FlexDemo/>
+      );
+    
   }
 }
 
