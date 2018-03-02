@@ -33,7 +33,7 @@ export default class FlexDemo extends Component{
             <View style={styles.PinContainer}>
                 
                 <View style={styles.PinHeader}>
-                    <View style={styles.UtilityNav}>
+                    <View>
                        
                         <FontAwesome.Button onPress={()=>{ 
                             console.log("Ya");
@@ -41,9 +41,9 @@ export default class FlexDemo extends Component{
                       
                     </View>
                     <View style={styles.SearchBox}>
-                         <TextInput style={{borderWidth:1,borderColor:"gray"}}/>
+                         <TextInput style={{flex:1,borderWidth:1,borderColor:"gray"}}/>
                     </View>
-                    <View style={styles.PinButtonContainer}>
+                    <View>
                         <FontAwesome.Button onPress={()=>{
                               console.log("Ya2");
                         }} name="shopping-cart" style={styles.VButton}  backgroundColor="white" color="red"></FontAwesome.Button>

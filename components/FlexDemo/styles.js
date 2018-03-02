@@ -13,14 +13,15 @@ export default StyleSheet.create({
         marginTop:35
     },
     UtilityNav:{
-        flexDirection:"row"
+        
     },
     VButton:{
         
     },
     SearchBox:{
         flex:1,
-        marginTop:10
+        marginTop:5,
+        marginBottom: 5,
     }
 
 });
